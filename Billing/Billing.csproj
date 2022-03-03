@@ -11,4 +11,8 @@
         <ProjectReference Include="..\DistributedEcomm.Core\DistributedEcomm.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="NodaTime" Version="3.0.9" />
+    </ItemGroup>
+
 </Project>

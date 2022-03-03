@@ -1,5 +1,6 @@
 using System.Collections.Immutable;
 using Eventuous;
+using static Storefront.Orders.OrderEvents;
 
 namespace Storefront.Orders;
 
@@ -7,13 +8,13 @@ public record OrderState : AggregateState<OrderState, OrderId>
 {
     public OrderState()
     {
-        On<OrderEvents.OrderRecorded>((state, recorded) =>
+        On<OrderRecorded>((state, recorded) =>
             state with { Id = new OrderId(recorded.OrderId), Price = recorded.Price });
 
-        On<OrderEvents.OrderImported>((state, imported) =>
+        On<OrderImported>((state, imported) =>
             state with { Id = new OrderId(imported.OrderId) });
 
-        On<OrderEvents.OrderPaymentRegistered>((state, paid) =>
+        On<OrderPaymentRegistered>((state, paid) =>
             state with
             {
                 PaymentRecords = state.PaymentRecords.Add(new PaymentRecord(paid.PaymentId, paid.AmountPaid)),
