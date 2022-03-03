@@ -1,0 +1,19 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v1
+
+      - name: Stop
+        if: always()
+        run: docker-compose -f "docker-compose.yml" down

@@ -2,6 +2,38 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupplyChain", "SupplyChain\SupplyChain.csproj", "{BE39B6FD-EB4F-43D2-B97E-B595FE2B0476}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedEcomm.Core", "DistributedEcomm.Core\DistributedEcomm.Core.csproj", "{A258B146-3AB1-4AE4-9284-33FCF6AFC393}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{07E47681-0F3D-4E37-AC71-9B3906AC35A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Supply Chain", "Supply Chain", "{35731605-CB09-4B25-B0EF-7FF183749E47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CI", "CI", "{BE41D738-84B5-46D7-BBF8-411F9885EE87}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build.dotnet.yml = .github\workflows\build.dotnet.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D125785D-3A46-4A0F-805E-00CE585DE743}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{19610F52-7607-4F47-819E-1665738FB29C}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Divisions", "Divisions", "{B6345FF1-B08C-4B03-BE5C-D4C8F787E87B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Storefront", "Storefront", "{8D2E8538-E7F9-4895-AB69-BDDC06372006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storefront", "Storefront\Storefront.csproj", "{999E2C55-2336-497B-856A-589955BFC9C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Billing", "Billing", "{A4654DA2-B5F3-422A-AC66-51F16AAE773A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billing", "Billing\Billing.csproj", "{66E2D666-7358-4900-B1E7-52DA9E771123}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +44,26 @@ Global
 		{BE39B6FD-EB4F-43D2-B97E-B595FE2B0476}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE39B6FD-EB4F-43D2-B97E-B595FE2B0476}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE39B6FD-EB4F-43D2-B97E-B595FE2B0476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A258B146-3AB1-4AE4-9284-33FCF6AFC393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A258B146-3AB1-4AE4-9284-33FCF6AFC393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A258B146-3AB1-4AE4-9284-33FCF6AFC393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A258B146-3AB1-4AE4-9284-33FCF6AFC393}.Release|Any CPU.Build.0 = Release|Any CPU
+		{999E2C55-2336-497B-856A-589955BFC9C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{999E2C55-2336-497B-856A-589955BFC9C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{999E2C55-2336-497B-856A-589955BFC9C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{999E2C55-2336-497B-856A-589955BFC9C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66E2D666-7358-4900-B1E7-52DA9E771123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E2D666-7358-4900-B1E7-52DA9E771123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E2D666-7358-4900-B1E7-52DA9E771123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E2D666-7358-4900-B1E7-52DA9E771123}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A258B146-3AB1-4AE4-9284-33FCF6AFC393} = {07E47681-0F3D-4E37-AC71-9B3906AC35A0}
+		{BE39B6FD-EB4F-43D2-B97E-B595FE2B0476} = {35731605-CB09-4B25-B0EF-7FF183749E47}
+		{35731605-CB09-4B25-B0EF-7FF183749E47} = {B6345FF1-B08C-4B03-BE5C-D4C8F787E87B}
+		{8D2E8538-E7F9-4895-AB69-BDDC06372006} = {B6345FF1-B08C-4B03-BE5C-D4C8F787E87B}
+		{999E2C55-2336-497B-856A-589955BFC9C1} = {8D2E8538-E7F9-4895-AB69-BDDC06372006}
+		{A4654DA2-B5F3-422A-AC66-51F16AAE773A} = {B6345FF1-B08C-4B03-BE5C-D4C8F787E87B}
+		{66E2D666-7358-4900-B1E7-52DA9E771123} = {A4654DA2-B5F3-422A-AC66-51F16AAE773A}
 	EndGlobalSection
 EndGlobal
