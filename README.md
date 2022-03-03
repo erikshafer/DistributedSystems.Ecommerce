@@ -30,4 +30,4 @@ Actual log coming soon.
 
 ## License
 
-To Be Determined.
+[MIT license](./LICENSE).
