@@ -9,7 +9,10 @@ public record PaymentState : AggregateState<PaymentState, PaymentId>
     {
         On<PaymentRecorded>((state, recorded) =>
             state with { Id = new PaymentId(recorded.PaymentId) });
-        
+
+        On<PaymentCancelled>((state, cancelled) =>
+            state with { Id = new PaymentId(cancelled.PaymentId) });
+
         // TODO
     }
 

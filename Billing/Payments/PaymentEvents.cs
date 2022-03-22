@@ -11,4 +11,11 @@ public static class PaymentEvents
         string OrderId,
         string Sku,
         LocalDate PlacedAt);
+
+    [EventType("PaymentCancelled")]
+    public record PaymentCancelled(
+        string PaymentId,
+        string OrderId,
+        string Sku,
+        string Reason);
 }
