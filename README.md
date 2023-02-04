@@ -7,13 +7,9 @@
 
 ## What is this code repository for?
 
-It is (currently) a .NET solution for separate projects that interact with each other. AKA a distributed system.
+This repository is home to separate projects that interact with each other. Also known as a distributed system. 
 
-This is largely a test-bed for my own experiments, but will also be the subject of upcoming blogs on [event-sourcing.dev](https://www.event-sourcing.dev) and other fine platforms.
-
-NOTE: This repository should never be considered "complete".
-
-- Erik Shafer
+More simply, this repository is a proving ground for demonstrating various ideas and topics that are discussed on blogs such as [event-sourcing.dev](https://www.event-sourcing.dev). Some branches and areas may be more experimental in nature for my own learning and solution-building.
 
 
 ## Documentation
@@ -21,11 +17,24 @@ NOTE: This repository should never be considered "complete".
 Coming soon.
 
 
-## Change Log
+## Divisions - The Separate Systems
 
-Actual log coming soon.
+These are not truly separate, decoupled systems that live in separate repositories and managed by separate teams for obvious reasons.
 
-2021-Dec-12: stood up project after talking about it for months
+- **Billing**
+  - responsible for payments
+- **Storefront**
+  - responsible for consuming the orders feed from the store
+- **Supply Chain**
+  - responsible for incoming and outgoing of inventory
+
+
+## Brief Change Log
+
+Will flesh something more substantial in the future. For now these are some quick notes that summarize commits as the project's bare minimum is being built-up.
+
+2022-Mar-02: stood project up
+2022-Mar-11: resuming scaffolding efforts
 
 
 ## License
